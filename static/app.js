@@ -94,7 +94,7 @@ function showFinalScore(topScore = 0, totalScore = 0) {
 }
 
 function startTimer() {
-  let remaining = 13000;
+  let remaining = 60000;
   document.getElementById("timer").innerHTML = `<div>Time Remaining: ${
     remaining / 1000
   }</div>`;

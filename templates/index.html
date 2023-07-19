@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %}Play some Boggle {% endblock %} 
+
+{%block main_content %}
+<h1>Let's Boggle</h1>
+<div><button id="startButton">Start a new game</button></div>
+
+<div id="timer"></div>
+<div id="game">
+  <!-- {% for row in board %}
+  <div>
+    {% for letter in row %}
+    <span>{{letter}}</span>
+    {% endfor %}
+  </div>
+  {% endfor %} -->
+</div>
+<div id="form">
+  <form action="" autocomplete="off">
+    <div><label for="guess">Find a word in the grid</label></div>
+    <div><input type="text" name="guess" autocomplete="off"/></div>
+    <button id="submit-button">Submit Word</button>
+  </form>
+  <div><span id="response"></span></div>
+</div>
+<div id="score"></div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="static/app.js"></script>
+{% endblock %}
